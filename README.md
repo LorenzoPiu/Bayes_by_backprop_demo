@@ -4,6 +4,6 @@ A simple pytorch implementation of a variational neural network with the Bayes b
 Once running the code, a folder with different frames will be created in your system, and then the 
 following video will be displayed:
 
-![](output_video_2.mp4)
+![](output_video.gif)
 
 
