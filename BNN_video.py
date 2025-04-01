@@ -272,8 +272,10 @@ def predict_with_uncertainty(model, x, n_samples=1000):
     with torch.no_grad():
         preds = torch.stack([model(x) for _ in range(n_samples)])
     mean_pred = preds.mean(0)
-    uncertainty = preds.std(0)# /torch.abs(mean_pred)  # Variance across the samples divided by the output value
-    # I use the square root because it should be similar to how you compute the turbulence intensity
+    # Variance across the samples. Uncomment to divide by the mean value
+    uncertainty = preds.std(0)# /torch.abs(mean_pred)  
+    # This implementation is far from being memory efficient; 
+    # compute mean and standard deviation with an incremental algorithm when the number of samples and/or observations becomes too large
     return mean_pred, uncertainty
 
 # %% Training
