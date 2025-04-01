@@ -7,5 +7,4 @@ following video will be displayed:
 ![](output_video.gif)
 
 ## References
-[1] Pawlowski, Nick, Andrew Brock, Matthew CH Lee, Martin Rajchl, and Ben Glocker. "Implicit weight uncertainty in neural networks." arXiv preprint arXiv:1711.01297 (2017).
-
+[1] Blundell, Charles, Julien Cornebise, Koray Kavukcuoglu, and Daan Wierstra. "Weight uncertainty in neural network." In International conference on machine learning, pp. 1613-1622. PMLR, 2015.
